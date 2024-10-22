@@ -1,3 +1,8 @@
 [submodule "libs/RPi_Hat_Template"]
 	path = libs/RPi_Hat_Template
 	url = https://github.com/devbisme/RPi_Hat_Template
+
+[submodule "libs/ki-lime-pi-pico"]
+    path = libs/ki-lime-pi-pico
+    url = https://github.com/recursivenomad/ki-lime-pi-pico
+
