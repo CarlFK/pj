@@ -1995,6 +1995,36 @@
 		)
 		(uuid "babbe70e-9dbf-4830-9705-fd0f121e680a")
 	)
+	(wire
+		(pts
+			(xy 181.61 24.13) (xy 181.61 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43019e19-aef9-4b5a-bb5d-17e416010ea4")
+	)
+	(wire
+		(pts
+			(xy 85.09 24.13) (xy 181.61 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fcf3b46-36a5-49a0-b8fd-4a62c7800c30")
+	)
+	(wire
+		(pts
+			(xy 85.09 38.1) (xy 85.09 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a46efbae-ddbb-4a7f-830d-0e0651b4204a")
+	)
 	(symbol
 		(lib_id "Connector:Raspberry_Pi_2_3")
 		(at 90.17 71.12 0)
