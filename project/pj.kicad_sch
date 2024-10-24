@@ -2562,12 +2562,6 @@
 		(uuid "a3b038c3-6134-40c7-8819-0ebb161f3e11")
 	)
 	(junction
-		(at 118.11 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a9a91fc4-1975-4143-90de-7e1608e79328")
-	)
-	(junction
 		(at 115.57 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2704,16 +2698,6 @@
 			(type default)
 		)
 		(uuid "2bf03526-fef7-475d-b6e0-bd07b7095379")
-	)
-	(wire
-		(pts
-			(xy 128.27 44.45) (xy 128.27 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "351c2766-ff58-4362-8a93-7b5256dd648e")
 	)
 	(wire
 		(pts
@@ -3057,16 +3041,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 44.45) (xy 128.27 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a334e7f8-fc1d-4c93-a1f0-1fa4c0c40a86")
-	)
-	(wire
-		(pts
 			(xy 137.16 119.38) (xy 137.16 113.03)
 		)
 		(stroke
@@ -3187,16 +3161,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 43.18) (xy 118.11 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c46b857f-2470-45c4-ac28-5e8e1734df00")
-	)
-	(wire
-		(pts
 			(xy 109.22 72.39) (xy 115.57 72.39)
 		)
 		(stroke
@@ -3204,6 +3168,16 @@
 			(type default)
 		)
 		(uuid "c479ceeb-4eb8-4776-8d7c-a2ff7ff2bdd9")
+	)
+	(wire
+		(pts
+			(xy 118.11 44.45) (xy 127 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e5223d-f0be-4d09-ab85-5a585d5de908")
 	)
 	(wire
 		(pts
@@ -3476,7 +3450,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "92e64bcf-7c4a-4628-ab28-7378f1717906")
+			(uuid "92e64bcf-7c4a-4628-ab28-7378f1717907")
 		)
 		(instances
 			(project ""
@@ -3628,72 +3602,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 128.27 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5788da01-3abd-4a03-bc83-daef76990ab8")
-		(property "Reference" "#PWR01"
-			(at 128.27 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 128.27 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ead1ac34-d362-4397-a265-dab3ccfebf59")
-		)
-		(instances
-			(project ""
-				(path "/3f830ea6-5a5f-4b7b-8d42-0620c39d4ee6"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 115.57 39.37 90)
 		(unit 1)
@@ -3765,6 +3673,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 127 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "628514a3-f589-43e6-8af5-1ba3263cf683")
+		(property "Reference" "#PWR06"
+			(at 127 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "938cf406-ce3a-4eed-9d9e-daf2197be41e")
+		)
+		(instances
+			(project ""
+				(path "/3f830ea6-5a5f-4b7b-8d42-0620c39d4ee6"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 54.61 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3818,7 +3792,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "92e64bcf-7c4a-4628-ab28-7378f1717906")
+			(uuid "92e64bcf-7c4a-4628-ab28-7378f1717908")
 		)
 		(instances
 			(project ""
@@ -4231,7 +4205,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "ead1ac34-d362-4397-a265-dab3ccfebf59")
+			(uuid "ead1ac34-d362-4397-a265-dab3ccfebf5a")
 		)
 		(instances
 			(project ""
