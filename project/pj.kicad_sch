@@ -2544,7 +2544,7 @@
 		(uuid "252a7d94-45f8-491e-b986-bd0da7098548")
 	)
 	(junction
-		(at 165.1 31.75)
+		(at 166.37 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b417517-44b4-4f6e-bd83-d554715c557f")
@@ -2579,7 +2579,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 35.56) (xy 165.1 31.75)
+			(xy 166.37 39.37) (xy 166.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2889,7 +2889,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 31.75) (xy 165.1 31.75)
+			(xy 187.96 55.88) (xy 186.69 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7db915cd-32e2-47bf-a9ab-27b0af98d85a")
+	)
+	(wire
+		(pts
+			(xy 144.78 35.56) (xy 166.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2939,7 +2949,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 31.75) (xy 186.69 31.75)
+			(xy 166.37 35.56) (xy 187.96 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3029,7 +3039,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 31.75) (xy 186.69 55.88)
+			(xy 187.96 35.56) (xy 187.96 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3149,7 +3159,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 31.75) (xy 140.97 31.75)
+			(xy 91.44 35.56) (xy 142.24 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3239,7 +3249,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 36.83) (xy 91.44 31.75)
+			(xy 91.44 36.83) (xy 91.44 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3316,7 +3326,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 38.1 0)
+		(at 166.37 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3325,7 +3335,7 @@
 		(fields_autoplaced yes)
 		(uuid "02bd3e04-afa6-41b1-ade1-43fce4e2d53b")
 		(property "Reference" "#PWR014"
-			(at 165.1 44.45 0)
+			(at 166.37 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3334,7 +3344,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 43.18 0)
+			(at 166.37 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,7 +3352,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 38.1 0)
+			(at 166.37 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,7 +3361,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 38.1 0)
+			(at 166.37 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,7 +3370,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 38.1 0)
+			(at 166.37 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3588,7 +3598,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 170.18 35.56 0)
+		(at 171.45 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3597,7 +3607,7 @@
 		(fields_autoplaced yes)
 		(uuid "40996126-0219-4b6f-b932-627793b974d2")
 		(property "Reference" "J9"
-			(at 172.72 35.5599 0)
+			(at 173.99 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3606,7 +3616,7 @@
 			)
 		)
 		(property "Value" "External PWR"
-			(at 172.72 38.0999 0)
+			(at 173.99 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3614,8 +3624,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 170.18 35.56 0)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
+			(at 171.45 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3624,7 +3634,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 35.56 0)
+			(at 171.45 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3633,7 +3643,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 170.18 35.56 0)
+			(at 171.45 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3664,7 +3674,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "59ce9b4a-25fa-40c1-9c54-9e98d30493f3")
 		(property "Reference" "J8"
 			(at 120.65 38.0999 90)
@@ -4807,7 +4816,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 143.51 36.83 270)
+		(at 142.24 30.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4816,25 +4825,25 @@
 		(fields_autoplaced yes)
 		(uuid "cfe9e216-529c-48a0-a004-abb3706e0d95")
 		(property "Reference" "J10"
-			(at 146.05 35.5599 90)
+			(at 147.32 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "Pico PWR enable"
-			(at 146.05 38.0999 90)
+			(at 147.32 31.7499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 143.51 36.83 0)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm"
+			(at 142.24 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4843,7 +4852,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 36.83 0)
+			(at 142.24 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4852,7 +4861,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 143.51 36.83 0)
+			(at 142.24 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
