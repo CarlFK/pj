@@ -373,8 +373,8 @@
 			)
 		)
 		(property "Value" "Pi External PWR"
-			(at 0 4.87 0)
-			(layer "F.Fab")
+			(at 1.83 0.22 -90)
+			(layer "F.SilkS")
 			(uuid "32864069-b08e-4c5d-aa49-408b0af4a2fa")
 			(effects
 				(font
@@ -1235,7 +1235,7 @@
 		)
 		(property "Value" "Reset Pi"
 			(at 0 4.87 0)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "2ce83b74-e107-4c6e-bfe1-388309487be2")
 			(effects
 				(font
@@ -2638,7 +2638,7 @@
 		)
 		(fp_arc
 			(start 10.579676 25.189937)
-			(mid 10.357946 25.493957)
+			(mid 10.357958 25.493991)
 			(end 10 25.61)
 			(stroke
 				(width 0.12)
@@ -7583,11 +7583,11 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "7c5655ad-8c15-4fdc-9844-b239cc277051")
-		(at 68.87 80.76 -90)
+		(at 70.11 80.73 -90)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J7"
-			(at 0 -2.33 -90)
+			(at -2.46 -0.93 360)
 			(layer "F.SilkS")
 			(uuid "25d79e52-662a-44ac-9bba-9860775ba7a3")
 			(effects
@@ -7598,8 +7598,8 @@
 			)
 		)
 		(property "Value" "Reset Pico"
-			(at 0 4.87 -90)
-			(layer "F.Fab")
+			(at 5.46 -0.16 90)
+			(layer "F.SilkS")
 			(uuid "888aa505-3ecc-48ee-b5b3-f7ba205642cf")
 			(effects
 				(font
@@ -7803,7 +7803,7 @@
 			(uuid "d46b3e0b-8ef5-4d37-9407-4c1e98f3c9e7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.27 0)
+			(at 0 1.27 360)
 			(layer "F.Fab")
 			(uuid "7c2e7e57-f53f-410d-9944-a3be5d1f08a7")
 			(effects
@@ -9487,15 +9487,14 @@
 			)
 		)
 		(property "Value" "3B+"
-			(at 0 -5.31 90)
-			(layer "B.Fab")
+			(at -2.07 -2.29 0)
+			(layer "F.SilkS")
 			(uuid "2626917b-c29f-4be4-b331-6a26912475a7")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -9760,15 +9759,14 @@
 			)
 		)
 		(property "Value" "zero"
-			(at 0 -5.31 90)
-			(layer "B.Fab")
+			(at 0.76 2.76 0)
+			(layer "F.SilkS")
 			(uuid "f3ec3b04-3cff-40a1-af21-4937985cb4e7")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -10033,15 +10031,14 @@
 			)
 		)
 		(property "Value" "2B+"
-			(at 0 -5.31 -90)
-			(layer "B.Fab")
+			(at -1.88 0.68 180)
+			(layer "F.Fab")
 			(uuid "e4642f96-f0a7-4ca0-9275-bb28c84e5132")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -10508,15 +10505,14 @@
 			)
 		)
 		(property "Value" "3A+"
-			(at 0 -5.31 90)
-			(layer "B.Fab")
+			(at 2.09 -0.41 180)
+			(layer "F.SilkS")
 			(uuid "ba077f3f-eb93-4755-9f6b-81cdd7e85f59")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
-				(justify mirror)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -11993,12 +11989,20 @@
 		(uuid "0bc3cae0-5383-4951-8e35-6c3b4619ee16")
 	)
 	(segment
-		(start 67.62 86.13)
-		(end 67.62 82.34)
+		(start 67.57 83.06)
+		(end 67.57 80.73)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 52)
-		(uuid "1ec372b0-9588-4275-9b01-3c23736c7692")
+		(uuid "304e7b6e-c77f-4977-9d79-2ae81569b5be")
+	)
+	(segment
+		(start 67.61 80.69)
+		(end 67.57 80.73)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 52)
+		(uuid "4052c198-c197-45c9-a070-a3ef32077eed")
 	)
 	(segment
 		(start 67.6 80.76)
@@ -12017,6 +12021,30 @@
 		(uuid "58a59d16-2768-4274-9cd9-c72db5531a0d")
 	)
 	(segment
+		(start 67.61 75.76)
+		(end 67.61 80.69)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 52)
+		(uuid "683e9634-9826-4533-a33a-e2c1a6afa630")
+	)
+	(segment
+		(start 67.59 83.25)
+		(end 67.59 83.08)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 52)
+		(uuid "69f3b1e4-86e0-4c9d-8e9b-d710ecf8ce9b")
+	)
+	(segment
+		(start 67.59 82.31)
+		(end 67.59 83.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 52)
+		(uuid "7885230b-b93b-4ce9-a29e-b8f2c899202f")
+	)
+	(segment
 		(start 67.62 86.13)
 		(end 61.12 86.13)
 		(width 0.2)
@@ -12025,28 +12053,36 @@
 		(uuid "8183b349-af71-49f1-9ab6-805042168ad3")
 	)
 	(segment
-		(start 67.59 73.935)
-		(end 67.59 80.75)
+		(start 67.57 85.98)
+		(end 67.57 80.73)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 52)
-		(uuid "ac81c334-3f83-43df-b51b-3eb4975b4d80")
+		(uuid "8eb2a882-0d52-44b4-8275-319e95ee3213")
 	)
 	(segment
-		(start 67.59 82.31)
-		(end 67.59 84.01)
+		(start 67.62 86.03)
+		(end 67.57 85.98)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 52)
-		(uuid "d653c343-ea9d-40eb-873a-4fef56de2499")
+		(uuid "95d94813-1d6a-498f-ac7b-2c694165de77")
 	)
 	(segment
-		(start 67.59 80.77)
-		(end 67.59 82.31)
+		(start 67.59 83.08)
+		(end 67.57 83.06)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 52)
-		(uuid "ddc758a0-2c3f-4823-a9ab-c6be4b59eae0")
+		(uuid "b99fff86-f932-4381-9697-4e6b8ae253a9")
+	)
+	(segment
+		(start 67.62 86.13)
+		(end 67.62 86.03)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 52)
+		(uuid "bce40850-45a7-4c10-815b-3b4c75d458a1")
 	)
 	(segment
 		(start 67.59 80.75)
