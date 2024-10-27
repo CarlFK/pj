@@ -3858,16 +3858,6 @@
 		)
 		(uuid "07c969ef-8199-432a-8c67-b2b42e3dc70a")
 	)
-	(bus
-		(pts
-			(xy 255.27 17.78) (xy 40.64 17.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08266c8b-2911-462b-a928-f16477003550")
-	)
 	(wire
 		(pts
 			(xy 114.3 96.52) (xy 166.37 96.52)
@@ -4938,6 +4928,16 @@
 		)
 		(uuid "f6789356-73f4-4440-aeb8-24a8ea6b42ea")
 	)
+	(bus
+		(pts
+			(xy 40.64 17.78) (xy 255.27 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7e0ea80-08a1-4cc3-bfe0-acabb8ccbe3a")
+	)
 	(wire
 		(pts
 			(xy 241.3 80.01) (xy 252.73 80.01)
@@ -5206,6 +5206,17 @@
 			(justify left bottom)
 		)
 		(uuid "dfb4b27a-5789-41d1-a529-e3b3b11f7f25")
+	)
+	(label "serial"
+		(at 59.69 17.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e0513434-da46-4a00-82ff-e984fc30ed2a")
 	)
 	(label "TMS"
 		(at 186.69 74.93 0)
