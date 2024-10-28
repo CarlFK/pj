@@ -13,7 +13,28 @@ git clone https://github.com/realthunder/kicad_parser
  * filename: pj.net
  * click (Save) button.
 
+Open pj.net in your favorite text editor,
+find the 'nets' block,
+find the start/end of the interesting things.
+
+
 ```
+$ python pj.py --help
+usage: pj.py [-h] [--filename [FILENAME]] [-k KEY] [-t] [-v] range [range ...]
+
+KiCad netlist thing
+
+positional arguments:
+  range                 start end netlist range
+
+options:
+  -h, --help            show this help message and exit
+  --filename [FILENAME]
+                        input filename
+  -k KEY, --key KEY     key to sort on
+  -t, --test            run test(s)
+  -v, --verbose
+
 $ python pj.py 0 6
 TMS | BCM27 | 13 | 9 | GPIO6
 TDI | BCM26 | 37 | 10 | GPIO7
