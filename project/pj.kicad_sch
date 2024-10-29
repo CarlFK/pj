@@ -5191,17 +5191,6 @@
 		)
 		(uuid "dfb4b27a-5789-41d1-a529-e3b3b11f7f25")
 	)
-	(label "serial"
-		(at 59.69 17.78 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0513434-da46-4a00-82ff-e984fc30ed2a")
-	)
 	(label "TMS"
 		(at 186.69 74.93 0)
 		(fields_autoplaced yes)
@@ -5223,6 +5212,28 @@
 			(justify left bottom)
 		)
 		(uuid "fee15669-35e9-463a-bdac-785d5f9a25ce")
+	)
+	(global_label "serial"
+		(shape input)
+		(at 40.64 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "99d10814-55c2-4599-8a8a-cfa838d6995f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.9471 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "fun"
 		(shape input)
