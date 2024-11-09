@@ -4,6 +4,7 @@
 # enable ssh
 # setup user/pw
 # add ssh keys
+# config.txt
 
 # mount sdcard's p1 (boot) and p2 (/ root)
 # ./fixit.sh user password [/path/to/rootfs] [/path/to/bootfs]
@@ -12,6 +13,7 @@ user=$1
 password=$2
 
 mntdir=/media/${USER}
+mntdir=/media
 
 rootfs=${3:-${mntdir}/rootfs}
 bootfs=${4:-${mntdir}/bootfs}
@@ -39,8 +41,14 @@ sudo touch ${bootfs}/ssh
 
 # setup ssh keys
 sudo mkdir -p ${rootfs}/root/.ssh
-# sudo ssh-keygen -f root/.ssh/id_rsa
+sudo ssh-keygen -f ${rootfs}/root/.ssh/id_rsa
+sudo mkdir -p ${rootfs}/home/${user}/.ssh
+sudo ssh-keygen -f ${rootfs}/home/${user}/.ssh/id_rsa
 
 # scp  videoteam@slf.sytes.net:.ssh/id_rsa.pub .
 sudo cp id_rsa.pub ${rootfs}/root/.ssh/authorized_keys
 sudo chown -R --reference=${rootfs}/root ${rootfs}/root/.ssh
+
+sudo cp id_rsa.pub ${rootfs}/home/${user}/.ssh/authorized_keys
+sudo chown -R --reference=${rootfs}/home/${user} ${rootfs}/home/${user}/.ssh
+
