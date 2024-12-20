@@ -9,11 +9,36 @@ from pprint import pprint
 from kicad_parser import KicadPCB
 
 
-def get_net(filename, start,end, verbose):
+def get_net(filename, verbose):
 
     net = KicadPCB.load(filename)
 
     l=[]
+    for n in net.nets.net:
+
+        d = {
+                'code' : eval(n.code),
+                'name' : eval(n.name),
+                'index' : int(eval(n.node[0].pin)),
+                }
+
+        for node in n.node:
+                import code; code.interact(local=locals())
+                {
+                'pico' : { 'name': eval(n.node[0].pinfunction), 'pin' : eval(n.node[0].pin) },
+                'pi' : { 'name': eval(n.node[1].pinfunction), 'pin' : eval(n.node[1].pin) },
+                }
+
+        if verbose: pprint(d)
+        l.append(d)
+
+    return l
+
+
+
+
+def some_net(net, start,end, verbose):
+
 
     for i in range(start,end):
 
@@ -21,8 +46,8 @@ def get_net(filename, start,end, verbose):
         d = {
                 'code' : eval(n.code),
                 'name' : eval(n.name)[1:],
-                'pico' : { 'name': eval(n.node[0].pinfunction), 'pin' : eval(n.node[0].pin) },
                 'index' : int(eval(n.node[0].pin)),
+                'pico' : { 'name': eval(n.node[0].pinfunction), 'pin' : eval(n.node[0].pin) },
                 'pi' : { 'name': eval(n.node[1].pinfunction), 'pin' : eval(n.node[1].pin) },
                 }
         if verbose: pprint(d)
@@ -48,6 +73,12 @@ def get_args():
 
     parser = argparse.ArgumentParser(
             description="KiCad netlist thing")
+
+    parser.add_argument('--components',
+            help='components ... we care about?',
+            nargs='+',
+            default=['A1','J1']
+            )
 
     parser.add_argument('range',
             help='start end netlist range',
@@ -77,7 +108,11 @@ def get_args():
 def main():
     args = get_args()
 
-    net = get_net(args.filename, args.range[0], args.range[1], args.verbose)
+    net = get_net(args.filename, args.verbose)
+
+    if args.range is not None:
+        net = some_net(net, args.range[0], args.range[1], args.verbose)
+
     net = sort_net(net, args.key)
 
     wiki_rows(net)
